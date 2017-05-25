@@ -4,6 +4,7 @@
         <main id="main" class="site-main" role="main">
 
     <h1>Shop Stuff</h1>
+
     <div class = "shop-links">
       <a href="http://localhost/inhabitent/product-type/do/">Do</a>
       <a href="http://localhost/inhabitent/product-type/eat/">Eat</a>

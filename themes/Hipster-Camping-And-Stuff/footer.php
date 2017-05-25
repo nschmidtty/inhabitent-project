@@ -27,7 +27,7 @@
 					</div>
 					<p>Copyright 2016 <span>inhabitent<span></p>
 					<div classs = "logo">
-						<img src= <?php echo get_template_directory_uri() . '/media/logos/inhabitent-logo-text.svg' ?> alt="">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src= <?php echo get_template_directory_uri() . '/media/logos/inhabitent-logo-text.svg' ?> alt=""></a>	
 					</div>
 				</div><!-- .site-info -->
 

@@ -23,7 +23,7 @@ function red_starter_body_classes($classes)
 add_filter( 'body_class', 'red_starter_body_classes' );
 
 
-function my_login_logo_pic()
+function change_login_logo_pic()
 {
     echo '<style type="text/css"> 
 body.login div#login h1 a {
@@ -37,16 +37,16 @@ body.login div#login h1 a {
 	}
 </style>';
 }
-add_action( 'login_enqueue_scripts', 'my_login_logo_pic' );
+add_action( 'login_enqueue_scripts', 'change_login_logo_pic' );
 
-function my_login_logo_url()
+function change_login_logo_url()
 {
         return home_url();
 }
 
-add_action( 'login_headerurl', 'my_login_logo_url' );
+add_action( 'login_headerurl', 'change_login_logo_url' );
 
-function hwl_home_pagesize($query)
+function products_home_pagesize($query)
 {
     if (is_admin() || ! $query->is_main_query()) {
         return;
@@ -59,4 +59,32 @@ function hwl_home_pagesize($query)
         return;
     }
 }
-add_action( 'pre_get_posts', 'hwl_home_pagesize', 1 );
+add_action( 'pre_get_posts', 'products_home_pagesize', 1 );
+
+function archive_title_filter($title)
+{
+    if (is_post_type_archive()) {
+        $title = post_type_archive_title( '', false );
+    } elseif (is_tax()) {
+        $title = single_term_title( '', false );
+    }
+  
+    return $title;
+}
+ 
+add_filter( 'get_the_archive_title', 'archive_title_filter' );
+
+function about_background()
+{
+    wp_enqueue_style(
+        'custom-style',
+        get_template_directory_uri() . 'build/css/style.min.css'
+    );
+        $background = CFS()->get( 'hero_image' ); //E.g. #FF0000
+        $custom_css = "
+                .about-title{
+                        background-image: url({$background});
+                }";
+        wp_add_inline_style( 'custom-style', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'about_background' );
