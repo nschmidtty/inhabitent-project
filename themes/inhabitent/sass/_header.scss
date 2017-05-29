@@ -1,0 +1,21 @@
+#masthead{
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+}
+
+#header-logo{
+  height: 50px;
+  width: 50px;
+}
+
+#site-navigation{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-nav-menu-container{
+    a{
+      margin: 10px;
+    }
+}

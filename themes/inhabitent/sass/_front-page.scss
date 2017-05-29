@@ -1,0 +1,86 @@
+.herobanner{
+  height: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.herobanner-background{
+  background-image: url("../../media/images/home-hero.jpg");
+  background-size: cover;
+}
+
+.front-page-shop{
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+}
+
+.front-page-shop a{
+  padding: 15px;
+  margin: 30px;
+  margin-bottom: 50px;
+  background-color: #248A83;
+  color: white;
+  text-decoration: none;
+}
+
+.front-page-shop img{
+  margin-top: 20px;
+  height: 75px;
+  width: 75px;
+
+}
+
+.shop-stuff{
+  display: flex;
+}
+
+.shopping{
+  text-align: center;
+}
+
+.front-page-shop{
+  width: 25%;
+  margin: 10px;
+  p{
+    margin: 10px;
+  }
+}
+
+.journal{
+  text-align: center;
+}
+
+.journals{
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-front{
+  width: 30%;
+  border: 1px solid #e1e1e1;
+  text-align: left;
+  h2{
+    font-size: 12px;
+    border-top: 5px solid #e1e1e1;
+    margin-top: 0px;
+  }
+  img{
+    width: 100%;
+  }
+  .read-more{
+    padding: 10px 30px;
+    border: 1px solid black;
+  }
+  .not-image{
+    border: 1px solid #e1e1e1;
+    border-top: 5px solid #e1e1e1;
+  }
+  h1{
+    font-size: 14px;
+  }
+  p{
+    text-decoration: none;
+    margin: 5px;
+  }
+}
