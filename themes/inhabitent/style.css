@@ -668,79 +668,6 @@ object {
 body {
   background-color: white; }
 
-.herobanner {
-  height: 1100px;
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-
-.herobanner-background {
-  background-image: url("../../media/images/home-hero.jpg");
-  background-size: cover; }
-
-.front-page-shop {
-  border: 1px solid #e1e1e1;
-  border-top: 5px solid #e1e1e1; }
-
-.front-page-shop a {
-  padding: 15px;
-  margin: 30px;
-  margin-bottom: 50px;
-  background-color: #248A83;
-  color: white;
-  text-decoration: none; }
-
-.front-page-shop img {
-  margin-top: 20px;
-  height: 75px;
-  width: 75px; }
-
-.shop-stuff {
-  display: -ms-flexbox;
-  display: flex; }
-
-.shopping {
-  text-align: center; }
-
-.front-page-shop {
-  width: 25%;
-  margin: 10px; }
-  .front-page-shop p {
-    margin: 10px; }
-
-.journal {
-  text-align: center; }
-
-.journals {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-.post-front {
-  width: 30%;
-  border: 1px solid #e1e1e1;
-  text-align: left; }
-  .post-front h2 {
-    font-size: 12px;
-    border-top: 5px solid #e1e1e1;
-    margin-top: 0px; }
-  .post-front img {
-    width: 100%; }
-  .post-front .read-more {
-    padding: 10px 30px;
-    border: 1px solid black; }
-  .post-front .not-image {
-    border: 1px solid #e1e1e1;
-    border-top: 5px solid #e1e1e1; }
-  .post-front h1 {
-    font-size: 14px; }
-  .post-front p {
-    text-decoration: none;
-    margin: 5px; }
-
 #colophon {
   background-image: url("../../media/images/dark-wood.png");
   background-size: cover;
@@ -788,9 +715,9 @@ body {
   width: 300px; }
 
 #masthead {
-  border-bottom: 1px solid #e1e1e1;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: absolute; }
 
 #header-logo {
   height: 50px;
@@ -802,10 +729,34 @@ body {
   -ms-flex-pack: end;
       justify-content: flex-end;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  color: white; }
 
 .menu-nav-menu-container a {
   margin: 10px; }
+
+.search-form fieldset {
+  border: none; }
+
+.blog #content {
+  width: 700px;
+  width: 65%;
+  display: inline-block; }
+
+.blog #primary {
+  width: 65%;
+  display: inline-block; }
+
+.blog #secondary {
+  vertical-align: top;
+  width: 25%;
+  display: inline-block; }
+
+#page {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0px; }
 
 #divide {
   display: -ms-flexbox;
@@ -837,6 +788,136 @@ body {
 #entry-title {
   color: white;
   text-decoration: none; }
+
+#content {
+  width: 100%; }
+
+#page {
+  display: block; }
+
+.herobanner {
+  height: 930px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.herobanner-background {
+  background-image: url("../../media/images/home-hero.jpg");
+  background-size: cover; }
+
+.front-page-shop {
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1; }
+  .front-page-shop a {
+    padding: 15px;
+    margin: 30px;
+    margin-bottom: 50px;
+    background-color: #248A83;
+    color: white;
+    text-decoration: none; }
+  .front-page-shop img {
+    margin-top: 20px;
+    height: 75px;
+    width: 75px; }
+
+.shop-stuff {
+  display: -ms-flexbox;
+  display: flex; }
+
+.shopping {
+  text-align: center; }
+
+.front-page-shop {
+  width: 25%;
+  margin: 10px; }
+  .front-page-shop p {
+    margin: 10px; }
+
+.journal {
+  text-align: center; }
+
+.journals {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.post-front {
+  width: 30%;
+  border: 1px solid #e1e1e1;
+  text-align: left; }
+  .post-front h2 {
+    font-size: 12px;
+    border-top: 5px solid #e1e1e1;
+    margin-top: 0px; }
+  .post-front img {
+    width: 100%; }
+  .post-front .read-more {
+    padding: 10px 30px;
+    border: 1px solid black; }
+  .post-front .not-image {
+    border: 1px solid #e1e1e1;
+    border-top: 5px solid #e1e1e1; }
+  .post-front h1 {
+    font-size: 14px; }
+  .post-front p {
+    text-decoration: none;
+    margin: 5px; }
+
+.adventure {
+  height: 720px; }
+  .adventure .adventures {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 540px; }
+  .adventure .adventure-info {
+    color: white; }
+  .adventure .canoe {
+    -ms-flex: 1 1 49%;
+        flex: 1 1 49%;
+    min-width: 49%;
+    max-width: 49%;
+    height: 100%;
+    overflow: hidden;
+    background: url("../../media/images/canoe-girl.jpg");
+    background-size: cover;
+    margin-right: 20px; }
+  .adventure .last-three {
+    -ms-flex: 1 1 49%;
+        flex: 1 1 49%;
+    min-width: 49%;
+    max-width: 49%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .adventure .last-three .beach {
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+      min-width: 100%;
+      height: 50%;
+      background: url("../../media/images/beach-bonfire.jpg");
+      background-size: cover;
+      margin-bottom: 20px; }
+    .adventure .last-three .mountain {
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+      min-width: 45%;
+      height: 46%;
+      background: url("../../media/images/mountain-hikers.jpg");
+      background-size: cover;
+      margin-right: 20px; }
+    .adventure .last-three .night-sky {
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+      min-width: 45%;
+      height: 46%;
+      background: url("../../media/images/night-sky.jpg");
+      background-size: cover; }
 
 .content-products {
   display: -ms-flexbox;

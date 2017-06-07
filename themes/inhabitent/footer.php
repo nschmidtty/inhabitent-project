@@ -5,9 +5,6 @@
  * @package RED_Starter_Theme
  */
 ?>
-<header>
-    <link href=<?php bloginfo('stylesheet_url') ?> rel="stylesheet">
-</header>
 
         </div><!-- #content -->
 
@@ -38,8 +35,6 @@
             </footer><!-- #colophon -->
         </div>
         </div><!-- #page -->
-
         <?php wp_footer(); ?>
-
     </body>
 </html>

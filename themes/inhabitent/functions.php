@@ -118,3 +118,4 @@ function inhabitent_remove_submenus()
 
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 
+wp_enqueue_script( 'search-toggle', get_template_directory_uri() . '/js/search-toggle.js', array ( 'jquery' ), 1.1, true);

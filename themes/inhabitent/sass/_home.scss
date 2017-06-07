@@ -1,3 +1,32 @@
+.blog {
+  #content{
+  // width: 700px;
+  width: 65%;
+  display: inline-block;
+}
+
+#primary {
+  width: 65%;
+  display:inline-block;
+}
+
+#secondary{
+  // position: relative;
+  // top: 50px;
+  vertical-align: top;
+  width: 25%;
+  display: inline-block;
+}
+
+}
+
+
+#page{
+  display: flex;
+  width: 100%;
+  padding: 0px;
+}
+
 #divide{
   display: flex;
 }
@@ -33,3 +62,5 @@
     color: white;
     text-decoration: none;
     }
+
+    

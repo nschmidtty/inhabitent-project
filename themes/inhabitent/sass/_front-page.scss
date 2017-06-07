@@ -1,86 +1,139 @@
-.herobanner{
-  height: 1100px;
+  #content{
+    width: 100%;
+  }
+
+  #page{
+  display: block;
+}
+  
+  .herobanner {
+  height: 930px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.herobanner-background{
+.herobanner-background {
   background-image: url("../../media/images/home-hero.jpg");
   background-size: cover;
 }
 
-.front-page-shop{
+.front-page-shop {
   border: 1px solid #e1e1e1;
   border-top: 5px solid #e1e1e1;
-}
-
-.front-page-shop a{
-  padding: 15px;
-  margin: 30px;
-  margin-bottom: 50px;
-  background-color: #248A83;
-  color: white;
-  text-decoration: none;
-}
-
-.front-page-shop img{
-  margin-top: 20px;
-  height: 75px;
-  width: 75px;
-
-}
-
-.shop-stuff{
-  display: flex;
-}
-
-.shopping{
-  text-align: center;
-}
-
-.front-page-shop{
-  width: 25%;
-  margin: 10px;
-  p{
-    margin: 10px;
-  }
-}
-
-.journal{
-  text-align: center;
-}
-
-.journals{
-  display: flex;
-  justify-content: space-between;
-}
-
-.post-front{
-  width: 30%;
-  border: 1px solid #e1e1e1;
-  text-align: left;
-  h2{
-    font-size: 12px;
-    border-top: 5px solid #e1e1e1;
-    margin-top: 0px;
-  }
-  img{
-    width: 100%;
-  }
-  .read-more{
-    padding: 10px 30px;
-    border: 1px solid black;
-  }
-  .not-image{
-    border: 1px solid #e1e1e1;
-    border-top: 5px solid #e1e1e1;
-  }
-  h1{
-    font-size: 14px;
-  }
-  p{
+  a {
+    padding: 15px;
+    margin: 30px;
+    margin-bottom: 50px;
+    background-color: #248A83;
+    color: white;
     text-decoration: none;
-    margin: 5px;
   }
+  img {
+    margin-top: 20px;
+    height: 75px;
+    width: 75px;
+  }
+}
+  .shop-stuff {
+    display: flex;
+  }
+  .shopping {
+    text-align: center;
+  }
+  .front-page-shop {
+    width: 25%;
+    margin: 10px;
+    p {
+      margin: 10px;
+    }
+  }
+  .journal {
+    text-align: center;
+  }
+  .journals {
+    display: flex;
+    justify-content: space-between;
+  }
+  .post-front {
+    width: 30%;
+    border: 1px solid #e1e1e1;
+    text-align: left;
+    h2 {
+      font-size: 12px;
+      border-top: 5px solid #e1e1e1;
+      margin-top: 0px;
+    }
+    img {
+      width: 100%;
+    }
+    .read-more {
+      padding: 10px 30px;
+      border: 1px solid black;
+    }
+    .not-image {
+      border: 1px solid #e1e1e1;
+      border-top: 5px solid #e1e1e1;
+    }
+    h1 {
+      font-size: 14px;
+    }
+    p {
+      text-decoration: none;
+      margin: 5px;
+    }
+  }
+
+.adventure{
+  height: 720px;
+  .adventures{
+  display: flex;
+  flex-wrap: wrap;
+  height: 540px;
+  }
+  .adventure-info{
+    color: white;
+  }
+  .canoe{
+    flex: 1 1 49%;
+    min-width: 49%;
+    max-width: 49%;
+    height: 100%;
+    overflow: hidden;
+    background: url("../../media/images/canoe-girl.jpg");
+    background-size: cover;
+    margin-right: 20px;
+  }
+  .last-three{
+    flex: 1 1 49%;
+    min-width: 49%;
+    max-width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    .beach{
+      flex: 1 1 100%;
+      min-width: 100%;
+      height: 50%;
+      background: url("../../media/images/beach-bonfire.jpg");
+      background-size: cover;
+      margin-bottom: 20px;
+    }
+    .mountain{
+      flex: 1 1 45%;
+      min-width: 45%;
+      height: 46%;
+      background: url("../../media/images/mountain-hikers.jpg");
+      background-size: cover;
+      margin-right: 20px;
+    }
+    .night-sky{
+      flex: 1 1 45%;
+      min-width: 45%;
+      height: 46%;
+      background: url("../../media/images/night-sky.jpg");
+      background-size: cover;
+    }
+  }
+
+
 }
